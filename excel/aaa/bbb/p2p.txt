@@ -1,0 +1,523 @@
+create database p2p;
+use p2p;
+
+SET FOREIGN_KEY_CHECKS=0;
+-- ----------------------------
+-- Table structure for `b_bid_info`
+-- ----------------------------
+DROP TABLE IF EXISTS `b_bid_info`;
+CREATE TABLE `b_bid_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '投标记录ID',
+  `loanId` int(11) NOT NULL COMMENT '产品ID',
+  `uid` int(11) NOT NULL COMMENT '用户ID',
+  `bidMoney` double NOT NULL COMMENT '投标金额',
+  `bidTime` date NOT NULL COMMENT '投标时间',
+  `bidStatus` int(11) NOT NULL COMMENT '投标状态（0投资失败，1投资成功）',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=324 DEFAULT CHARSET=utf8 COMMENT='投资记录表';
+
+-- ----------------------------
+-- Records of b_bid_info
+-- ----------------------------
+INSERT INTO `b_bid_info` VALUES ('1', '1', '1', '10000', '2017-07-26', '1');
+INSERT INTO `b_bid_info` VALUES ('2', '1310699', '1', '100', '2017-07-27', '1');
+INSERT INTO `b_bid_info` VALUES ('3', '1', '1', '100', '2017-07-31', '1');
+INSERT INTO `b_bid_info` VALUES ('4', '2', '1', '2', '2017-08-01', '1');
+INSERT INTO `b_bid_info` VALUES ('5', '2', '1', '1', '2017-08-01', '1');
+INSERT INTO `b_bid_info` VALUES ('6', '2', '1', '1', '2017-08-01', '1');
+INSERT INTO `b_bid_info` VALUES ('7', '1310694', '1', '100', '2017-08-06', '1');
+INSERT INTO `b_bid_info` VALUES ('8', '1310694', '1', '100', '2017-08-06', '1');
+INSERT INTO `b_bid_info` VALUES ('9', '1310695', '1', '100', '2017-08-12', '1');
+INSERT INTO `b_bid_info` VALUES ('10', '1310694', '1', '100', '2017-08-12', '1');
+INSERT INTO `b_bid_info` VALUES ('11', '1310694', '1', '100', '2017-08-12', '1');
+INSERT INTO `b_bid_info` VALUES ('12', '1310694', '1', '100', '2017-08-12', '1');
+INSERT INTO `b_bid_info` VALUES ('13', '1310694', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('214', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('215', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('216', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('217', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('218', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('219', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('220', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('221', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('222', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('223', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('224', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('225', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('226', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('227', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('228', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('229', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('230', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('231', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('232', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('233', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('234', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('235', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('236', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('237', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('238', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('239', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('240', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('241', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('242', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('243', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('244', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('245', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('246', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('247', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('248', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('249', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('250', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('251', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('252', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('253', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('254', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('255', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('256', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('257', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('258', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('259', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('260', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('261', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('262', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('263', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('264', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('265', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('266', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('267', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('268', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('269', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('270', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('271', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('272', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('273', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('274', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('275', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('276', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('277', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('278', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('279', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('280', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('281', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('282', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('283', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('284', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('285', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('286', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('287', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('288', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('289', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('290', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('291', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('292', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('293', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('294', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('295', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('296', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('297', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('298', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('299', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('300', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('301', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('302', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('303', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('304', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('305', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('306', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('307', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('308', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('309', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('310', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('311', '6', '2', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('312', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('313', '6', '1', '1', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('314', '1310694', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('315', '1310694', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('316', '1310694', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('317', '1310694', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('318', '1', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('319', '1', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('320', '1', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('321', '1310694', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('322', '1310694', '1', '100', '2017-08-14', '1');
+INSERT INTO `b_bid_info` VALUES ('323', '1310694', '5', '100', '2017-08-14', '1');
+
+-- ----------------------------
+-- Table structure for `b_borrower_info`
+-- ----------------------------
+DROP TABLE IF EXISTS `b_borrower_info`;
+CREATE TABLE `b_borrower_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT '0' COMMENT '姓名',
+  `sex` int(11) DEFAULT '0' COMMENT '性别0男1女',
+  `birthday` date NOT NULL COMMENT '出生年月',
+  `education` int(11) DEFAULT '0' COMMENT '学历（字典值）',
+  `marital` int(11) DEFAULT '0' COMMENT '婚姻状况（字典值）',
+  `address` varchar(150) DEFAULT '0' COMMENT '现居地址',
+  `industry` int(11) DEFAULT '0' COMMENT '工作行业（字典值）',
+  `workCity` int(11) DEFAULT '0' COMMENT '工作城市（字典值）',
+  `workYear` varchar(50) DEFAULT '0' COMMENT '工作年限',
+  `yearSalary` varchar(50) DEFAULT '0' COMMENT '年薪',
+  `housing` int(11) DEFAULT '0' COMMENT '房产情况（字典值）',
+  `car` int(11) DEFAULT '0' COMMENT '车产情况（字典值）',
+  `borrowReason` varchar(50) DEFAULT '0' COMMENT '借款缘由',
+  `borrowMoney` double DEFAULT '0' COMMENT '借款金额',
+  `borrowTerm` double DEFAULT '0' COMMENT '借款期限（单位月）',
+  `idcardAuth` int(11) DEFAULT '0' COMMENT '身份认证状态（0未认证1已认证）',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='借款人信息表';
+
+-- ----------------------------
+-- Records of b_borrower_info
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `b_creditor_rights`
+-- ----------------------------
+DROP TABLE IF EXISTS `b_creditor_rights`;
+CREATE TABLE `b_creditor_rights` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `borrow_money` double NOT NULL DEFAULT '0' COMMENT '借款金额',
+  `borrow_cycle` int(11) NOT NULL DEFAULT '0' COMMENT '借款期限',
+  `borrow_purpose` int(11) NOT NULL DEFAULT '0' COMMENT '借款目的',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='债权表';
+
+-- ----------------------------
+-- Records of b_creditor_rights
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `b_deal_record`
+-- ----------------------------
+DROP TABLE IF EXISTS `b_deal_record`;
+CREATE TABLE `b_deal_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `uid` int(11) NOT NULL COMMENT '用户ID',
+  `deal_no` bigint(20) NOT NULL COMMENT '交易编号',
+  `deal_status` int(11) NOT NULL COMMENT '交易状态',
+  `deal_money` double NOT NULL COMMENT '交易金额',
+  `deal_time` datetime NOT NULL COMMENT '交易时间',
+  `deal_type` int(11) NOT NULL COMMENT '交易类型',
+  `deal_desc` varchar(50) NOT NULL COMMENT '交易描述',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='交易记录表';
+
+-- ----------------------------
+-- Records of b_deal_record
+-- ----------------------------
+INSERT INTO `b_deal_record` VALUES ('1', '1', '1501148611830', '1', '100', '2017-07-27 17:43:32', '2', '投资');
+INSERT INTO `b_deal_record` VALUES ('2', '1', '1501148740027', '1', '100', '2017-07-27 17:45:40', '2', '投资');
+INSERT INTO `b_deal_record` VALUES ('3', '1', '1501341987129', '1', '100', '2017-07-29 23:26:27', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('4', '1', '1501495613441', '1', '100', '2017-07-31 18:06:53', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('5', '1', '1501578643841', '1', '2', '2017-08-01 17:10:44', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('6', '1', '1501578712411', '1', '1', '2017-08-01 17:11:52', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('7', '1', '1501578720410', '1', '1', '2017-08-01 17:12:00', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('8', '1', '1502023841765', '1', '100', '2017-08-06 20:50:42', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('9', '1', '1502024284254', '1', '100', '2017-08-06 20:58:04', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('10', '1', '1502523645669', '1', '100', '2017-08-12 15:40:46', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('11', '1', '1502530470157', '1', '100', '2017-08-12 17:34:30', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('12', '1', '1502530563922', '1', '100', '2017-08-12 17:36:04', '1', '投资');
+INSERT INTO `b_deal_record` VALUES ('13', '1', '1502530594779', '1', '100', '2017-08-12 17:36:35', '1', '投资');
+
+-- ----------------------------
+-- Table structure for `b_income_record`
+-- ----------------------------
+DROP TABLE IF EXISTS `b_income_record`;
+CREATE TABLE `b_income_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL COMMENT '用户ID',
+  `loanId` int(11) NOT NULL COMMENT '产品ID',
+  `bidId` int(11) NOT NULL COMMENT '投标记录ID',
+  `bidMoney` double NOT NULL COMMENT '投资金额',
+  `incomeDate` date NOT NULL COMMENT '收益时间',
+  `incomeMoney` double NOT NULL COMMENT '收益金额',
+  `incomeStatus` int(11) NOT NULL COMMENT '收益状态（0未返，1已返）',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=303 DEFAULT CHARSET=utf8 COMMENT='收益记录表';
+
+-- ----------------------------
+-- Records of b_income_record
+-- ----------------------------
+INSERT INTO `b_income_record` VALUES ('203', '1', '6', '214', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('204', '1', '6', '215', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('205', '1', '6', '216', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('206', '1', '6', '217', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('207', '1', '6', '218', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('208', '1', '6', '219', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('209', '1', '6', '220', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('210', '1', '6', '221', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('211', '1', '6', '222', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('212', '1', '6', '223', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('213', '1', '6', '224', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('214', '1', '6', '225', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('215', '1', '6', '226', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('216', '1', '6', '227', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('217', '1', '6', '228', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('218', '1', '6', '229', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('219', '1', '6', '230', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('220', '1', '6', '231', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('221', '1', '6', '232', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('222', '1', '6', '233', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('223', '1', '6', '234', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('224', '1', '6', '235', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('225', '1', '6', '236', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('226', '1', '6', '237', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('227', '1', '6', '238', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('228', '1', '6', '239', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('229', '1', '6', '240', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('230', '1', '6', '241', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('231', '1', '6', '242', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('232', '1', '6', '243', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('233', '1', '6', '244', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('234', '1', '6', '245', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('235', '1', '6', '246', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('236', '1', '6', '247', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('237', '1', '6', '248', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('238', '1', '6', '249', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('239', '1', '6', '250', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('240', '1', '6', '251', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('241', '1', '6', '252', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('242', '1', '6', '253', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('243', '1', '6', '254', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('244', '1', '6', '255', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('245', '1', '6', '256', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('246', '1', '6', '257', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('247', '1', '6', '258', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('248', '1', '6', '259', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('249', '1', '6', '260', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('250', '1', '6', '261', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('251', '1', '6', '262', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('252', '1', '6', '263', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('253', '1', '6', '264', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('254', '1', '6', '265', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('255', '1', '6', '266', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('256', '1', '6', '267', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('257', '1', '6', '268', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('258', '1', '6', '269', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('259', '1', '6', '270', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('260', '1', '6', '271', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('261', '1', '6', '272', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('262', '1', '6', '273', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('263', '1', '6', '274', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('264', '1', '6', '275', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('265', '1', '6', '276', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('266', '1', '6', '277', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('267', '1', '6', '278', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('268', '1', '6', '279', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('269', '1', '6', '280', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('270', '1', '6', '281', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('271', '1', '6', '282', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('272', '1', '6', '283', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('273', '1', '6', '284', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('274', '1', '6', '285', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('275', '1', '6', '286', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('276', '1', '6', '287', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('277', '1', '6', '288', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('278', '1', '6', '289', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('279', '1', '6', '290', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('280', '1', '6', '291', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('281', '1', '6', '292', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('282', '1', '6', '293', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('283', '1', '6', '294', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('284', '1', '6', '295', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('285', '1', '6', '296', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('286', '1', '6', '297', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('287', '1', '6', '298', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('288', '1', '6', '299', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('289', '1', '6', '300', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('290', '1', '6', '301', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('291', '1', '6', '302', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('292', '1', '6', '303', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('293', '1', '6', '304', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('294', '1', '6', '305', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('295', '1', '6', '306', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('296', '1', '6', '307', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('297', '1', '6', '308', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('298', '1', '6', '309', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('299', '1', '6', '310', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('300', '2', '6', '311', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('301', '1', '6', '312', '1', '2017-08-16', '0.01', '1');
+INSERT INTO `b_income_record` VALUES ('302', '1', '6', '313', '1', '2017-08-16', '0.01', '1');
+
+-- ----------------------------
+-- Table structure for `b_loan_info`
+-- ----------------------------
+DROP TABLE IF EXISTS `b_loan_info`;
+CREATE TABLE `b_loan_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(50) NOT NULL COMMENT '产品名称',
+  `rate` double NOT NULL COMMENT '产品利率',
+  `cycle` int(11) NOT NULL COMMENT '产品期限',
+  `release_time` date NOT NULL COMMENT '产品发布时间',
+  `product_type` int(11) NOT NULL COMMENT '产品类型 0新手宝，1优选产品，2散标产品',
+  `product_no` varchar(50) NOT NULL COMMENT '产品编号',
+  `product_money` double NOT NULL COMMENT '产品金额',
+  `left_product_money` double NOT NULL COMMENT '产品剩余可投金额',
+  `bid_min_limit` double NOT NULL COMMENT '最低投资金额，即起投金额',
+  `bid_max_limit` double NOT NULL COMMENT '单笔投资最高限额',
+  `product_status` int(11) NOT NULL COMMENT '产品状态（0未满标，1已满标，2满标已生成收益计划）',
+  `product_full_time` datetime DEFAULT NULL COMMENT '产品投资满标时间',
+  `product_desc` text NOT NULL COMMENT '产品描述',
+  `version` int(11) NOT NULL COMMENT '版本号',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1310700 DEFAULT CHARSET=utf8 COMMENT='产品信息表';
+
+-- ----------------------------
+-- Records of b_loan_info
+-- ----------------------------
+INSERT INTO `b_loan_info` VALUES ('1', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '99600', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '3');
+INSERT INTO `b_loan_info` VALUES ('2', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '99696', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('3', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100', '0', '1', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '100');
+INSERT INTO `b_loan_info` VALUES ('4', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100', '0', '1', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '100');
+INSERT INTO `b_loan_info` VALUES ('6', '个人信用消费借款', '4.9', '1', '2017-07-24', '2', '20170722', '100', '0', '100', '0', '2', '2017-07-16 16:54:06', '个人消费借款，信用良好，购车消费，精英人士', '100');
+INSERT INTO `b_loan_info` VALUES ('7', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('8', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('9', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('13', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('14', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('15', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('16', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('17', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('18', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('19', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('20', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('28', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('29', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('30', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('31', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('32', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('33', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('34', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('35', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('36', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('37', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('38', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('39', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('40', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('41', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('42', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('43', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('59', '个人信用消费借款', '4.9', '6', '2017-07-24', '2', '20170722', '100000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '个人消费借款，信用良好，购车消费，精英人士', '0');
+INSERT INTO `b_loan_info` VALUES ('1310694', '满月宝', '5.6', '1', '2017-07-26', '1', '20170726', '1000000', '98700', '100', '0', '0', '0000-00-00 00:00:00', '短期信贷金融消费产品', '13');
+INSERT INTO `b_loan_info` VALUES ('1310695', '季度宝', '5.8', '1', '2017-07-26', '1', '20170726', '1000000', '99900', '100', '0', '0', '0000-00-00 00:00:00', '短期信贷金融消费产品', '1');
+INSERT INTO `b_loan_info` VALUES ('1310696', '双季宝', '6.5', '1', '2017-07-26', '1', '20170726', '1000000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '短期信贷金融消费产品', '0');
+INSERT INTO `b_loan_info` VALUES ('1310697', '年度宝', '8.5', '1', '2017-07-26', '1', '20170726', '1000000', '100000', '100', '0', '0', '0000-00-00 00:00:00', '短期信贷金融消费产品', '0');
+INSERT INTO `b_loan_info` VALUES ('1310699', '新手宝', '15', '7', '2017-07-26', '0', '20170726', '100000', '99500', '100', '0', '0', '0000-00-00 00:00:00', '短期信贷金融消费产品', '0');
+
+-- ----------------------------
+-- Table structure for `b_recharge_record`
+-- ----------------------------
+DROP TABLE IF EXISTS `b_recharge_record`;
+CREATE TABLE `b_recharge_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL COMMENT '用户id',
+  `rechargeNo` varchar(50) NOT NULL COMMENT '充值订单号',
+  `rechargeStatus` varchar(50) NOT NULL COMMENT '充值订单状态（0充值中，1充值成功，2充值失败）',
+  `rechargeMoney` double NOT NULL COMMENT '充值金额',
+  `rechargeTime` datetime NOT NULL COMMENT '充值时间',
+  `rechargeDesc` varchar(50) NOT NULL COMMENT '充值描述',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8 COMMENT='充值记录表';
+
+-- ----------------------------
+-- Records of b_recharge_record
+-- ----------------------------
+INSERT INTO `b_recharge_record` VALUES ('1', '1', '1501489834609', '0', '0.01', '2017-07-31 16:30:35', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('2', '1', '1501490635719', '0', '0.01', '2017-07-31 16:43:56', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('3', '1', '1501490823263', '1', '0.01', '2017-07-31 16:47:03', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('4', '1', '1501491112382', '1', '0.01', '2017-07-31 16:51:52', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('5', '1', '1501725717869', '0', '1.111', '2017-08-03 10:01:58', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('6', '1', '1501725981036', '0', '0.01', '2017-08-03 10:06:21', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('7', '1', '1501726137193', '0', '0.01', '2017-08-03 10:08:57', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('8', '1', '1501727489369', '0', '1.12122', '2017-08-03 10:31:29', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('9', '1', '1501728006875', '0', '0.01', '2017-08-03 10:40:07', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('10', '1', '1501728016965', '0', '0.01', '2017-08-03 10:40:17', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('11', '1', '1501728034093', '0', '0.01', '2017-08-03 10:40:34', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('12', '1', '1501728037262', '0', '0.01', '2017-08-03 10:40:37', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('13', '1', '1501728122258', '0', '1', '2017-08-03 10:42:02', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('14', '1', '1501728548630', '0', '0.01', '2017-08-03 10:49:09', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('15', '1', '1501728608962', '0', '0.01', '2017-08-03 10:50:09', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('16', '1', '1501728869884', '0', '0.01', '2017-08-03 10:54:30', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('17', '1', '1501728901531', '0', '0.01', '2017-08-03 10:55:02', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('18', '1', '1501728950112', '0', '0.01', '2017-08-03 10:55:50', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('19', '1', '1501728973824', '0', '0.01', '2017-08-03 10:56:14', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('20', '1', '1501729000664', '0', '0.01', '2017-08-03 10:56:41', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('21', '1', '1501729245978', '0', '0.01', '2017-08-03 11:00:46', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('22', '1', '1501729256515', '0', '0.01', '2017-08-03 11:00:57', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('23', '1', '1502021222705', '0', '0.01', '2017-08-06 20:07:03', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('24', '1', '1502023873391', '1', '0.01', '2017-08-06 20:51:13', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('25', '1', '1502024156914', '1', '0.01', '2017-08-06 20:55:57', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('26', '1', '1502448608243', '0', '0.1', '2017-08-11 18:50:08', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('27', '1', '1502448646236', '1', '0.01', '2017-08-11 18:50:46', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('28', '1', '1502449864723', '0', '0.01', '2017-08-11 19:11:05', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('29', '1', '1502500509727', '0', '0.01', '2017-08-12 09:15:10', '支付购买理财产品');
+INSERT INTO `b_recharge_record` VALUES ('30', '1', '1502519856863', '1', '0.01', '2017-08-12 14:37:37', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('31', '1', '1502866468501', '0', '0.01', '2017-08-16 14:54:29', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('32', '1', '1502868127518', '1', '0.01', '2017-08-16 15:22:08', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('33', '1', '1502868638430', '0', '0.01', '2017-08-16 15:30:38', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('34', '1', '1502868724312', '1', '0.01', '2017-08-16 15:32:04', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('35', '1', '1502872591807', '1', '0.01', '2017-08-16 16:36:32', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('36', '1', '1502873319830', '1', '0.01', '2017-08-16 16:48:40', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('37', '1', '1502873758936', '1', '0.01', '2017-08-16 16:55:59', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('38', '1', '1502874561626', '1', '0.01', '2017-08-16 17:09:22', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('39', '1', '1502874731033', '1', '0.01', '2017-08-16 17:12:11', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('40', '1', '1502879206156', '1', '0.01', '2017-08-16 18:26:46', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('41', '1', '1502880241719', '0', '0.01', '2017-08-16 18:44:02', '支付理财');
+INSERT INTO `b_recharge_record` VALUES ('42', '1', '1502880393830', '0', '0.01', '2017-08-16 18:46:34', '支付理财');
+
+-- ----------------------------
+-- Table structure for `u_finance_account`
+-- ----------------------------
+DROP TABLE IF EXISTS `u_finance_account`;
+CREATE TABLE `u_finance_account` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL COMMENT '用户ID',
+  `available_money` double NOT NULL COMMENT '用户可用资金',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='用户财务资金账户表';
+
+-- ----------------------------
+-- Records of u_finance_account
+-- ----------------------------
+INSERT INTO `u_finance_account` VALUES ('1', '1', '997295.150000001');
+INSERT INTO `u_finance_account` VALUES ('2', '5', '999999900');
+
+-- ----------------------------
+-- Table structure for `u_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `u_user`;
+CREATE TABLE `u_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户ID，主键',
+  `phone` varchar(11) NOT NULL COMMENT '注册手机号码',
+  `loginPassword` varchar(32) NOT NULL COMMENT '登录密码，密码长度最大16位',
+  `name` varchar(16) DEFAULT NULL COMMENT '用户姓名',
+  `idCard` varchar(18) DEFAULT NULL COMMENT '用户身份证号码',
+  `addTime` datetime DEFAULT NULL COMMENT '注册时间',
+  `lastLoginTime` datetime DEFAULT NULL COMMENT '最近登录时间',
+  `headerImage` varchar(50) DEFAULT NULL COMMENT '用户头像文件路径',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COMMENT='用户表';
+
+-- ----------------------------
+-- Records of u_user
+-- ----------------------------
+INSERT INTO `u_user` VALUES ('1', '13700000000', 'e10adc3949ba59abbe56e057f20f883e', '张无忌', '222222222222222222', null, '2017-08-16 18:26:42', null);
+INSERT INTO `u_user` VALUES ('5', '13700000001', '003d81296cbed643579b24d1cf6c907c', '张三丰', '111111111111111111', null, '2017-08-14 17:27:37', null);
+INSERT INTO `u_user` VALUES ('6', '13700000002', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('7', '13700000003', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('8', '13700000004', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('9', '13700000005', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('10', '13700000006', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('11', '13700000007', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('12', '13700000008', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('13', '13700000009', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('14', '13700000010', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('15', '13700000011', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('16', '13700000012', '003d81296cbed643579b24d1cf6c907c', '0', '0', null, null, null);
+INSERT INTO `u_user` VALUES ('17', '13700000013', '003d81296cbed643579b24d1cf6c907c', null, null, '2017-08-03 15:05:25', '2017-08-03 15:05:25', null);
+INSERT INTO `u_user` VALUES ('18', '13700000014', '003d81296cbed643579b24d1cf6c907c', null, null, '2017-08-03 15:06:46', '2017-08-03 15:06:46', null);
+INSERT INTO `u_user` VALUES ('19', '13700000015', '003d81296cbed643579b24d1cf6c907c', null, null, '2017-08-07 10:02:27', '2017-08-07 10:02:27', null);
+INSERT INTO `u_user` VALUES ('21', '13700000016', '003d81296cbed643579b24d1cf6c907c', null, null, '2017-08-07 10:13:34', '2017-08-07 10:13:34', null);
+INSERT INTO `u_user` VALUES ('22', '13700000017', '003d81296cbed643579b24d1cf6c907c', null, null, '2017-08-07 10:57:00', '2017-08-07 10:57:00', null);
